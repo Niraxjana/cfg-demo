@@ -3,25 +3,45 @@ import './App.css';
 
 function App() {
   return (
-    <div className="landing-container">
-      <header className="landing-header">
-        <h1>Welcome to Our Project</h1>
+    <div>
+      <nav className="navbar">
+        <div className="nav-logo">Anubhuti</div>
+        <ul className="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#campaigns">Campaigns</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <header id="home" className="landing-header">
+        <h1>Welcome to Anubhuti</h1>
         <p>Empowering communities through education and impact</p>
-        <a href="#features" className="cta-button">Get Started</a>
+        <a href="#campaigns" className="cta-button">Get Started</a>
       </header>
 
-      <section id="features" className="features">
+      <section id="campaigns" className="features">
         <div className="feature">
-          <h2>Feature 1</h2>
-          <p>Track outreach activities in real-time.</p>
+          <h2>School Readiness</h2>
+          <p>Helping kids get back into classrooms through awareness and guidance.</p>
         </div>
         <div className="feature">
-          <h2>Feature 2</h2>
-          <p>Visualize program impact with live dashboards.</p>
+          <h2>Community Campaigns</h2>
+          <p>Spreading awareness about education through field sessions and storytelling.</p>
         </div>
+      </section>
+
+      <section id="service" className="features">
         <div className="feature">
-          <h2>Feature 3</h2>
-          <p>Streamline data collection from Fellows.</p>
+          <h2>Fellow Support</h2>
+          <p>Training and tech tools for grassroots educators.</p>
+        </div>
+      </section>
+
+      <section id="contact" className="features">
+        <div className="feature">
+          <h2>Contact Us</h2>
+          <p>Email: contact@anubhuti.org<br />Phone: +91-XXXX-XXX-XXX</p>
         </div>
       </section>
     </div>
